@@ -1,0 +1,21 @@
+class GfG 
+{ 
+    public static void main(String args[]) 
+    { 
+        String s1 = new String("geeksforgeeks"); 
+        String s2 = new String("geeksforgeeks"); 
+        if (s1 == s2)  
+            System.out.println("Equal"); 
+        else
+            System.out.println("Not equal"); 
+    } 
+} 
+
+Output is 'Not Equal"
+
+I was confused by this in Java Outputs Set 8. The problem is that 
+"s1 and s2 are two different objects the references are not the same, and the == operator compares object reference. 
+So it prints “Not equal”, to compare the actual characters in the string .equals() method must be used."
+
+I understand why it won't work now, but only after reading through that sentence multiple times. I did not understand it and got lost
+there simply because either my memory totally failed me or we did not go over this in my Introduction to Java Programming Class.
